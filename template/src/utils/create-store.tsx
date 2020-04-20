@@ -1,6 +1,6 @@
 import React, { Context } from "react";
 
-export default function makeStore<T, A>(userReducer: (state: T, action: A) => T, initState: T, localStorageKey?: string)
+export default function createStore<T, A>(userReducer: (state: T, action: A) => T, initState: T, localStorageKey?: string)
     : [React.FunctionComponent, () => React.Dispatch<A>, () => T] {
     const dispathContext: Context<React.Dispatch<A>> = React.createContext((value: A) => {});
     const storeContext: Context<T> = React.createContext(initState);
