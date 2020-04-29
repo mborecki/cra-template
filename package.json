@@ -1,15 +1,31 @@
 {
-    "name": "cra-template-mborecki",
+    "name": "@mborecki/cra-template",
     "version": "1.0.0",
     "license": "MIT",
     "engines": {
         "node": ">=8.10"
     },
+    "description": "create-react-app template for prototypes",
     "main": "template.json",
     "files": [
         "template",
         "template.json"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mborecki/cra-template.git"
+    },
+    "homepage": "https://github.com/mborecki/cra-template",
+    "author": {
+        "name": "Marek Borecki"
+    },
+    "keywords": [
+        "create-react-app",
+        "template"
+    ],
+    "bugs": {
+        "url": "https://github.com/mborecki/cra-template/issues"
+    },
     "devDependencies": {
         "@testing-library/jest-dom": "^5.5.0",
         "@testing-library/react": "^10.0.2",
