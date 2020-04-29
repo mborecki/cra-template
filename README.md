@@ -2,6 +2,12 @@
 
 My take on [create-react-app](https://github.com/facebook/create-react-app) for prototypes and private projects.
 
+## Intalation
+
+```
+npx create-react-app my-app --template @mborecki
+```
+
 ## Dependencies
 
 * [Typescript](https://www.typescriptlang.org/)
