@@ -26,7 +26,7 @@
             "build": "react-scripts build",
             "test": "react-scripts test",
             "eject": "react-scripts eject",
-            "testFull": "react-scripts test --coverage --watchAll=false --verbose --collectCoverageFrom=**/*.{ts,tsx}"
+            "test:all": "react-scripts test --coverage --watchAll=false --verbose --collectCoverageFrom=**/*.{ts,tsx}"
         }
     }
 }
