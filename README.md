@@ -1,1 +1,3 @@
-# cra-template-mborecki
+# @mborecki/cra-template
+
+
