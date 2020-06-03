@@ -16,5 +16,6 @@ npx create-react-app my-app --template @mborecki
 * [axios](https://github.com/axios/axios)
 * [react-query](https://github.com/tannerlinsley/react-query)
 * [semantic-ui-react](https://react.semantic-ui.com/) (for easy prototypes)
-* [styled-components](https://styled-components.com/) (for custom styles)
-
+* [styled-components](https://styled-components.com/) (for custom dynamic styles)
+* [node-sass](https://github.com/sass/node-sass) (for static styles)
+* [@simbathesailor/use-what-changed](https://github.com/simbathesailor/use-what-changed) - debugging react hooks
