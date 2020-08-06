@@ -1261,6 +1261,11 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
+"@mborecki/react-create-store@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@mborecki/react-create-store/-/react-create-store-0.0.2.tgz#f0a690087d2bc6f69d714316e8b473182e3b7bcb"
+  integrity sha512-ra/MB3Zu7l60NO5UgFe/X/eEtuwn7/ahwyBCD/kr/igGbEGBOUKO57V9HRNDAhoieySV5zSZjMh2bJPKRVcB8w==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"

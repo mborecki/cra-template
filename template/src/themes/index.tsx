@@ -1,5 +1,5 @@
 import React from 'react';
-import createStore from '../utils/create-store';
+import createStore from '@mborecki/react-create-store';
 import { ThemeProvider } from 'styled-components';
 
 type ThemeState = {

@@ -1,6 +1,7 @@
 {
     "package": {
         "dependencies": {
+            "@mborecki/react-create-store": "^0.0.2",
             "@simbathesailor/use-what-changed": "^0.1.25",
             "@testing-library/jest-dom": "^5.11.2",
             "@testing-library/react": "^10.4.8",
@@ -22,6 +23,7 @@
             "semantic-ui-react": "^1.1.1",
             "styled-components": "^5.1.1",
             "typescript": "^3.9.7"
+
         },
         "scripts": {
             "start": "react-scripts start",

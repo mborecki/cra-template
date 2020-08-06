@@ -45,7 +45,7 @@
         "semantic-ui-css": "^2.4.1",
         "semantic-ui-react": "^1.1.1",
         "styled-components": "^5.1.1",
-        "typescript": "^3.9.7"
-    },
-    "dependencies": {}
+        "typescript": "^3.9.7",
+        "@mborecki/react-create-store": "^0.0.2"
+    }
 }
