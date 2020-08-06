@@ -14,9 +14,9 @@ export default function ThemeSelect() {
             <Dropdown>
                 <Dropdown.Menu>
                     {
-                        themeList.map(i => {
+                        themeList.map((i, index) => {
                             return (
-                                <Dropdown.Item onClick={() => dispach(i)}>
+                                <Dropdown.Item key={index} onClick={() => dispach(i)}>
                                     {i}
                                 </Dropdown.Item>
                             )
