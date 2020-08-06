@@ -1,4 +1,4 @@
-import makeStore from "../../utils/create-store";
+import makeStore from "@mborecki/react-create-store";
 import reducer from "./reducer";
 
 const DEMO_MODULE_LS_KEY = 'demo-module'

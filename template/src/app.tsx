@@ -1,9 +1,9 @@
 import React from 'react';
-import { BrowserRouter, NavLink, Route } from 'react-router-dom';
+import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom';
 
 import { Menu, Container } from 'semantic-ui-react';
-import HomePage from './routes/Home';
-import DemoPage from './routes/Demo';
+import HomePage from './routes/home';
+import DemoPage from './routes/demo';
 
 import ThemeSelect from './components/theme-select';
 
@@ -19,12 +19,11 @@ export default function App() {
                 </Menu.Item>
             </Menu>
             <Container text>
-                <Route path="/" exact>
-                    <HomePage />
-                </Route>
-                <Route path="/demo">
-                    <DemoPage />
-                </Route>
+                <Switch>
+                    <Route path="/" component={HomePage} />
+                    <Route path="/demo" component={DemoPage} />
+                    <Route component={HomePage} />
+                </Switch>
             </Container>
         </BrowserRouter>
     )
