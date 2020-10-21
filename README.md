@@ -19,3 +19,4 @@ npx create-react-app my-app --template @mborecki
 * [styled-components](https://styled-components.com/) (for custom dynamic styles)
 * [node-sass](https://github.com/sass/node-sass) (for static styles)
 * [@simbathesailor/use-what-changed](https://github.com/simbathesailor/use-what-changed) - debugging react hooks
+* [socket.io](https://socket.io/) - web socket comunication

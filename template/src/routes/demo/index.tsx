@@ -1,5 +1,5 @@
 import React from 'react';
-import DemoSmartComponent from '../../components/demo-smart-component';
+import DemoSmartComponent from '../../components/template-demos/demo-smart-component';
 
 export default function DemoPage() {
     return (

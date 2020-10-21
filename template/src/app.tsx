@@ -5,7 +5,7 @@ import { Menu, Container } from 'semantic-ui-react';
 import HomePage from './routes/home';
 import DemoPage from './routes/demo';
 
-import ThemeSelect from './components/theme-select';
+import ThemeSelect from './components/template-demos/theme-select';
 
 export default function App() {
     return (

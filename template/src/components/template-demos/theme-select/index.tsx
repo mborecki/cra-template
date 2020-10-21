@@ -1,6 +1,6 @@
 import React from 'react';
 import { Label, Dropdown } from 'semantic-ui-react';
-import { useThemeList, useThemeName, useThemeDispach } from '../../themes';
+import { useThemeList, useThemeName, useThemeDispach } from '../../../themes';
 
 export default function ThemeSelect() {
 
