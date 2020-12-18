@@ -1,5 +1,5 @@
+import React from "react";
 import { useState, useCallback, useEffect, useMemo } from "react";
-import { singletonHook } from 'react-singleton-hook';
 import useConfig from "./use-config";
 
 function _useNow() {
@@ -49,8 +49,30 @@ function _useNow() {
     }
 }
 
-const useNow = singletonHook({
-    now: 0, serverNow: 0, setDelta: () => {}, reset: () => {}
-}, _useNow);
+type TimeState = {
+    now: number,
+    serverNow: number,
+    setDelta: (v: number) => void,
+    reset: () => void
+}
+
+const initValue = {
+    now: Date.now(),
+    serverNow: Date.now(),
+    setDelta: (v: number) => {},
+    reset: () => {}
+}
+
+const timeContext = React.createContext<TimeState>(initValue)
+
+const TimeProvider: React.FunctionComponent = ({ children }) => {
+    return <timeContext.Provider value={_useNow()}>{children}</timeContext.Provider>
+}
+
+function useNow() {
+    return React.useContext(timeContext)
+}
+
+export {TimeProvider};
 
 export default useNow;

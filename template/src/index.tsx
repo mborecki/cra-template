@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './app';
 import ModulesProviders from './modules/providers';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
 import './style.scss';
 
@@ -14,11 +15,15 @@ import 'core-js/features/object/values'
 import 'core-js/features/number/is-nan';
 import 'core-js/features/string/starts-with';
 
+const queryClient = new QueryClient()
+
 ReactDOM.render(
     <React.StrictMode>
-        <ModulesProviders>
-            <App />
-        </ModulesProviders>
+        <QueryClientProvider client={queryClient}>
+            <ModulesProviders>
+                <App />
+            </ModulesProviders>
+        </QueryClientProvider>
     </React.StrictMode>,
     document.getElementById('root')
 );
