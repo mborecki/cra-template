@@ -2,23 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './app';
 import ModulesProviders from './modules/providers';
-import * as serviceWorker from './serviceWorker';
 
-import 'semantic-ui-css/semantic.min.css';
-import { Theme } from './themes';
+import './style.scss';
+
+import 'react-app-polyfill/ie11';
+import 'react-app-polyfill/ie9';
+import 'core-js/features/array/find';
+import 'core-js/features/array/includes';
+import 'core-js/features/array/fill';
+import 'core-js/features/object/values'
+import 'core-js/features/number/is-nan';
+import 'core-js/features/string/starts-with';
 
 ReactDOM.render(
     <React.StrictMode>
-        <Theme>
-            <ModulesProviders>
-                <App />
-            </ModulesProviders>
-        </Theme>
+        <ModulesProviders>
+            <App />
+        </ModulesProviders>
     </React.StrictMode>,
     document.getElementById('root')
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://cra.link/PWA
-serviceWorker.unregister();

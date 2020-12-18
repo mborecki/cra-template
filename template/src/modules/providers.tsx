@@ -1,5 +1,5 @@
 import React from "react";
-import { DemoModuleProvider } from "./demo";
+import { DemoModuleProvider } from "./main";
 
 const providersList: React.FunctionComponent<{}>[] = [
     DemoModuleProvider
