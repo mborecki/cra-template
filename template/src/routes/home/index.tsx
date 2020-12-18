@@ -1,7 +1,7 @@
 import React from 'react';
 import useNow from '../../modules/main/hooks/use-now';
 
-import * as dayjs from 'dayjs'
+import dayjs from 'dayjs'
 
 
 export default function HomePage() {

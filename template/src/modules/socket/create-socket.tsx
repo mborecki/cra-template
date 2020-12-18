@@ -1,9 +1,9 @@
-import socketIOClient from "socket.io-client";
+import {io, ManagerOptions, Socket, SocketOptions} from "socket.io-client";
 import React, { useContext } from "react";
 
-export default function createSocket(url: string, options: SocketIOClient.ConnectOpts = { transports: ['websocket'] }) {
-    const socket = socketIOClient(url, options);
-    const context = React.createContext<SocketIOClient.Socket>(socket);
+export default function createSocket(url: string, options: Partial<ManagerOptions & SocketOptions> = { transports: ['websocket'] }) {
+    const socket = io(url, options);
+    const context = React.createContext<Socket>(socket);
 
     const SocketProvider: React.FunctionComponent = ({ children }) => {
         return (

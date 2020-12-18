@@ -1,8 +1,8 @@
 import React from "react";
-import { DemoModuleProvider } from "./main";
+import { MainModuleProvider } from "./main";
 
 const providersList: React.FunctionComponent<{}>[] = [
-    DemoModuleProvider
+    MainModuleProvider
 ]
 
 const ModulesProviders: React.FunctionComponent = ({ children }) => {
