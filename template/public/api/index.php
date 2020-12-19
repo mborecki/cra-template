@@ -6,7 +6,7 @@
 // error_reporting(E_ALL);
 
 require __DIR__ . '/vendor/autoload.php';
-require __DIR__ . '/db.config.php';
+require __DIR__ . '/config.php';
 require __DIR__ . '/models/index.php';
 require __DIR__ . '/modules/index.php';
 
