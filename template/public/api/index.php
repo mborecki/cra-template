@@ -66,3 +66,8 @@ $app->get(API_BASE_URL . '/reset-db', function (ServerRequestInterface $request,
     $response->getBody()->write(json_encode($result));
     return $response;
 });
+
+$app->addRoutingMiddleware();
+$errorMiddleware = $app->addErrorMiddleware(false, false, false);
+
+$app->run();
