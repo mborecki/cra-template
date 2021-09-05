@@ -1,6 +1,6 @@
 {
     "name": "@mborecki/cra-template",
-    "version": "3.0.4",
+    "version": "3.0.5",
     "license": "MIT",
     "engines": {
         "node": ">=8.10"
