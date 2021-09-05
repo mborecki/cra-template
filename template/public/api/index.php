@@ -18,6 +18,11 @@ use App\DB;
 define('API_BASE_URL', '/api');
 
 $app = AppFactory::create();
+$app->addBodyParsingMiddleware();
+
+$app->options('/{routes:.+}', function ($request, $response, $args) {
+    return $response;
+});
 
 // Cross-domain
 $app->add(function ($request, $handler) {
@@ -56,6 +61,12 @@ $app->get(API_BASE_URL . '/config', function (ServerRequestInterface $request, R
     ), JSON_NUMERIC_CHECK));
     return $response;
 });
+
+$app->post(API_BASE_URL. '/post-demo', function (ServerRequestInterface $request, ResponseInterface $response, $args) {
+    $body = $request->getParsedBody();
+
+    return $response;
+})
 
 // TODO! Remove this before launch!
 $app->get(API_BASE_URL . '/reset-db', function (ServerRequestInterface $request, ResponseInterface $response, $args) {
