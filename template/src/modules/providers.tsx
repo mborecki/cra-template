@@ -1,9 +1,7 @@
 import React from "react";
 import { MainModuleProvider } from "./main";
-import { TimeProvider } from "./main/hooks/use-now";
 
 const providersList: React.FunctionComponent<{}>[] = [
-    TimeProvider,
     MainModuleProvider
 ]
 

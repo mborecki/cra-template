@@ -1,16 +1,22 @@
-import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import HomePage from './routes/home';
-import { getHomeRoute } from './routes/routes';
+import { getHomeRoute, getSubPageRoute } from './routes/routes';
+import React, { Suspense } from 'react';
+import Loader from './components/loader';
+
+const HomePage = React.lazy(() => import('./routes/home'));
+const SubPage = React.lazy(() => import('./routes/sub-page'));
 
 export default function App() {
     return (
         <BrowserRouter>
-            <Switch>
-                <Route path={getHomeRoute()} component={HomePage} exact />
-                <Route component={HomePage} />
-            </Switch>
+            <Suspense fallback={<Loader />}>
+            <Routes>
+                <Route path={getHomeRoute()} element={<HomePage />} />
+                <Route path={getSubPageRoute()} element={<SubPage />} />
+                <Route element={<HomePage />} />
+            </Routes>
+            </Suspense>
         </BrowserRouter>
     )
 }
