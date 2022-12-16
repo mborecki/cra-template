@@ -65,7 +65,7 @@ const initValue = {
 
 const timeContext = React.createContext<TimeState>(initValue)
 
-const TimeProvider: React.FunctionComponent = ({ children }) => {
+function TimeProvider({ children }: React.PropsWithChildren<{}>) {
     return <timeContext.Provider value={_useNow()}>{children}</timeContext.Provider>
 }
 

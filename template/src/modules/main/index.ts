@@ -1,4 +1,4 @@
-import makeStore from "@mborecki/react-create-store";
+import makeStore from "../../utils/make-store";
 import reducer from "./reducer";
 
 const CONFIG_MODULE_LS_KEY = 'page_config'

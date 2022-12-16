@@ -1,11 +1,11 @@
 import React from "react";
 import { MainModuleProvider } from "./main";
 
-const providersList: React.FunctionComponent<{}>[] = [
+const providersList: ((props: React.PropsWithChildren<any>) => JSX.Element)[] = [
     MainModuleProvider
 ]
 
-const ModulesProviders: React.FunctionComponent = ({ children }) => {
+const ModulesProviders = ({ children }: React.PropsWithChildren<{}>) => {
     return providersList.reduce((Prev, Next) => {
         return (
             <Next>
